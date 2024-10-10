@@ -1,0 +1,182 @@
+/* Variables */
+:root {
+    --primary-color: #4caf50;
+    --secondary-color: #00695c;
+    --text-color: #333;
+    --background-color: #f4f4f4;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 10px;
+    --transition-time: 0.3s;
+}
+
+/* Reset and base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    padding-top: 56px;
+    margin: 0;
+}
+
+/* Layout components */
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    animation: fadeInDown 1.2s ease-in-out;
+}
+
+header h1 {
+    animation: fadeInDown 1s;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+footer {
+    background-color: #a5d6a7;
+    color: black;
+    padding: 5px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+/* Feature boxes */
+.feature-box {
+    background: white;
+    padding: 40px 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform var(--transition-time), background-color var(--transition-time) ease-in-out;
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+.feature-box h2 {
+    color: var(--text-color);
+    animation: fadeInRight 1.2s;
+}
+
+.feature-box p {
+    line-height: 1.8;
+}
+
+/* Info box */
+.info-box {
+    background-color: #e0f7fa;
+    border-left: 5px solid var(--secondary-color);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Custom button */
+.btn-custom {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    transition: background-color var(--transition-time) ease;
+}
+
+.btn-custom:hover {
+    background-color: #388e3c;
+}
+
+/* Credits section */
+.credits-box {
+    background-color: #a5d6a7;
+    padding: 40px 20px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.credits-box .row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.credits-box img {
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color);
+    width: 150px;
+    height: 150px;
+    transition: transform var(--transition-time) ease;
+}
+
+.credits-box img:hover {
+    transform: scale(1.1);
+}
+
+.credits-box h4 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #004d40;
+}
+
+.credits-box p {
+    margin-top: 5px;
+    color: var(--secondary-color);
+}
+
+.credits-box .description {
+    margin-top: 30px;
+    font-size: 1.1em;
+    color: #004d40;
+}
+
+/* QR code container */
+.qr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.qr-image {
+    max-width: 200px;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .feature-box {
+        width: 90%;
+        padding: 30px 15px;
+    }
+
+    .credits-box .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .credits-box img {
+        width: 120px;
+        height: 120px;
+    }
+}
