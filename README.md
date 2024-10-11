@@ -1,4 +1,4 @@
-Proyecto de Mantenimiento Predictivo (PdM)
+_*Proyecto de Mantenimiento Predictivo (PdM)*_
 Descripción
 Este proyecto web está diseñado para proporcionar información sobre el Mantenimiento Predictivo (PdM) utilizando datos de sensores de vibración y algoritmos de Machine Learning. El sitio incluye una explicación del PdM, los algoritmos utilizados para el análisis de datos, y una sección de créditos para los creadores del proyecto.
 
@@ -15,19 +15,6 @@ Bootstrap 5: Framework CSS utilizado para facilitar el diseño responsivo y comp
 JavaScript (opcional): Para futuras funcionalidades dinámicas.
 Estructura del Proyecto
 
-proyecto-pdm/
-│
-├── index.html                  # Página principal del proyecto.
-├── css/
-│   └── styles.css              # Archivo de estilos personalizados.
-├── images/
-│   ├── nicolas.jpg             # Imagen de Nicolás Ceballos Brito.
-│   ├── camilo.jpeg             # Imagen de Camilo Castañeda Yepes.
-│   ├── juan.jpg                # Imagen de Juan Alejandro Urueña Serna.
-│   └── donaciones.png          # Imagen del código QR para donaciones.
-│
-└── README.md                   # Documento de descripción del proyecto.
-
 Cómo Empezar
 Clonar el repositorio:
 git clone https://github.com/tu-usuario/proyecto-pdm.git
@@ -37,12 +24,6 @@ Modificar el proyecto: Si necesitas hacer cambios, edita los archivos correspond
 
 Dependencias
 Este proyecto no requiere ninguna instalación de dependencias externas ya que se está utilizando Bootstrap a través de un CDN.
-
-Instalación
-Bootstrap: No es necesario instalar Bootstrap localmente, ya que está incluido desde el CDN en el archivo index.html.
-
-Si deseas agregar funcionalidades interactivas con JavaScript, asegúrate de enlazar el siguiente script:
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-F7Z9vXfg+CDqNayUswRn42w+UNnxycqfueHFlNBa2t9en5XtSjsvPpDqULP/axGA" crossorigin="anonymous"></script>
 
 Créditos
 Nicolás Ceballos Brito: nicolas.ceballos@ucp.edu.co
