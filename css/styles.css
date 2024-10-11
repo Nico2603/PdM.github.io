@@ -180,39 +180,49 @@ footer {
         height: 120px;
     }
 
-    /* Sección del video */
+/* Sección general del video */
 .video-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Caja con estilo de cajón */
+.box {
+    background-color: #ffffff;
+    border: 2px solid #dcdcdc;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 900px; /* Aumenta el tamaño del cajón */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
-    background-color: #f4f4f4; /* Color de fondo suave */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
 }
 
 /* Título del video */
 .video-section h2 {
-    font-size: 24px;
+    font-size: 28px;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
 }
 
 /* Descripción del video */
 .video-section p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
 }
 
-/* Contenedor del video */
+/* Contenedor del video responsivo */
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
     height: 0;
     overflow: hidden;
     max-width: 100%;
-    background-color: #000;
 }
 
 /* Estilo del iframe del video */
@@ -222,7 +232,13 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    border: none;
+    border-radius: 10px; /* Bordes redondeados en el video */
+}
+
+/* Aumentar el tamaño del iframe */
+.video-container iframe {
+    max-width: 100%;
+    height: 400px; /* Altura del video más grande */
 }
 
 }
