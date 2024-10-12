@@ -152,6 +152,27 @@ footer {
     box-shadow: var(--box-shadow);
 }
 
+/* Contenedor del video responsivo */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px; /* Aseguramos que no exceda el ancho del contenedor */
+    margin: 0 auto; /* Centramos el video */
+}
+
+/* Estilo del iframe del video */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Bordes redondeados en el video */
+}
+
 /* Animations */
 @keyframes fadeInDown {
     from { opacity: 0; transform: translateY(-20px); }
@@ -179,66 +200,4 @@ footer {
         width: 120px;
         height: 120px;
     }
-
-/* Sección general del video */
-.video-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-}
-
-/* Caja con estilo de cajón */
-.box {
-    background-color: #ffffff;
-    border: 2px solid #dcdcdc;
-    border-radius: 15px;
-    padding: 30px;
-    width: 100%;
-    max-width: 900px; /* Aumenta el tamaño del cajón */
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-/* Título del video */
-.video-section h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 15px;
-    font-weight: bold;
-}
-
-/* Descripción del video */
-.video-section p {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 25px;
-    line-height: 1.6;
-}
-
-/* Contenedor del video responsivo */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-/* Estilo del iframe del video */
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px; /* Bordes redondeados en el video */
-}
-
-/* Aumentar el tamaño del iframe */
-.video-container iframe {
-    max-width: 100%;
-    height: 400px; /* Altura del video más grande */
-}
-
 }
