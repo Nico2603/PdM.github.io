@@ -20,7 +20,7 @@
     <!-- Descripción General -->
     <div class="feature-box mb-4">
         <h2 class="text-center">¿Qué es el Mantenimiento Predictivo (PdM)?</h2>
-        <p>El <strong>Mantenimiento Predictivo (PdM)</strong> es una estrategia que utiliza datos en tiempo real para predecir fallos en máquinas y equipos. A través de <strong>sensores de vibración</strong>, se recopilan datos que son analizados para anticipar problemas antes de que ocurran.</p>
+        <p>El <strong>Mantenimiento Predictivo (PdM)</strong> es una estrategia que utiliza datos en tiempo real para predecir fallos en máquinas y equipos. A través de <strong>sensores de vibración</strong>, se recopilan datos que son analizados por algoritmos de <strong>machine learning</strong> para anticipar problemas antes de que ocurran, optimizando el mantenimiento y reduciendo costos.</p>
     </div>
 
     <!-- Funcionamiento del Sistema -->
@@ -29,17 +29,37 @@
         <p>Nuestro sistema está compuesto por <strong>sensores de vibración</strong> instalados en las máquinas, que recogen datos en tiempo real. Estos datos son procesados por algoritmos de machine learning, permitiendo generar alertas preventivas cuando se detecta un comportamiento anormal.</p>
         <ul class="list-group">
             <li class="list-group-item"><strong>Sensores:</strong> Dispositivos colocados en las máquinas que recopilan datos en tiempo real.</li>
-            <li class="list-group-item"><strong>Algoritmos de Machine Learning:</strong> Analizan los datos para detectar patrones.</li>
-            <li class="list-group-item"><strong>Alertas:</strong> El sistema genera una alerta cuando se detecta una anomalía.</li>
+            <li class="list-group-item"><strong>Algoritmos de Machine Learning:</strong> Analizan los datos para detectar patrones y predecir fallos.</li>
+            <li class="list-group-item"><strong>Alertas:</strong> El sistema genera una alerta cuando se detecta una anomalía que podría indicar un futuro fallo.</li>
         </ul>
     </div>
 
     <!-- Algoritmos de Machine Learning -->
     <div class="feature-box mb-4">
         <h2 class="text-center">Algoritmos de Machine Learning</h2>
+        <p>Los algoritmos de machine learning son fundamentales para el análisis de datos en nuestro sistema. Estos se dividen en tres categorías principales:</p>
         <ul class="list-group mb-3">
-            <li class="list-group-item"><strong>Algoritmos Supervisados:</strong> Entrenados con datos etiquetados para predecir resultados. Ejemplos: <em>Regresión logística, Random Forest.</em></li>
-            <li class="list-group-item"><strong>Algoritmos No Supervisados:</strong> Identifican patrones en datos no etiquetados. Ejemplos: <em>K-means, Isolation Forest.</em></li>
+            <li class="list-group-item">
+                <strong>Algoritmos Supervisados:</strong> Son entrenados con datos etiquetados, lo que significa que conocen de antemano el resultado esperado. Son útiles para hacer predicciones cuando los datos históricos están bien definidos. Algunos ejemplos son:
+                <ul>
+                    <li><em>Regresión logística:</em> Utilizada para predecir la probabilidad de un fallo en función de diversas variables.</li>
+                    <li><em>Random Forest:</em> Conjunto de árboles de decisión que permiten hacer predicciones precisas basadas en datos etiquetados.</li>
+                </ul>
+            </li>
+            <li class="list-group-item">
+                <strong>Algoritmos No Supervisados:</strong> Estos algoritmos trabajan con datos no etiquetados, lo que significa que buscan patrones ocultos en los datos sin saber de antemano cuál es el resultado correcto. Son útiles para detectar anomalías o agrupar datos. Ejemplos:
+                <ul>
+                    <li><em>K-means:</em> Algoritmo de agrupación que identifica patrones similares entre conjuntos de datos y los organiza en grupos.</li>
+                    <li><em>Isolation Forest:</em> Algoritmo especializado en la detección de anomalías, útil para identificar comportamientos fuera de lo normal.</li>
+                </ul>
+            </li>
+            <li class="list-group-item">
+                <strong>Redes Neuronales:</strong> Son algoritmos inspirados en el cerebro humano, capaces de aprender de grandes volúmenes de datos. Son especialmente útiles para problemas complejos, como la detección de fallos en entornos con múltiples variables. Ejemplos:
+                <ul>
+                    <li><em>Redes Neuronales Artificiales (ANN):</em> Utilizadas para reconocer patrones complejos y hacer predicciones basadas en grandes conjuntos de datos.</li>
+                    <li><em>Redes Neuronales Recurrentes (RNN):</em> Adecuadas para analizar secuencias de datos, como la evolución temporal de las vibraciones de una máquina.</li>
+                </ul>
+            </li>
         </ul>
     </div>
     
@@ -48,17 +68,17 @@
         <h2 class="text-center">Ventajas del Mantenimiento Predictivo</h2>
         <ul class="list-group">
             <li class="list-group-item">Mayor vida útil de las máquinas.</li>
-            <li class="list-group-item">Reducción de costes de mantenimiento.</li>
+            <li class="list-group-item">Reducción de costes de mantenimiento al intervenir solo cuando es necesario.</li>
             <li class="list-group-item">Optimización del tiempo de producción.</li>
             <li class="list-group-item">Menor tiempo de inactividad no planificada.</li>
+            <li class="list-group-item">Mayor seguridad para los operadores al prevenir fallos catastróficos.</li>
         </ul>
     </div>
 
     <!-- Proyección del Proyecto -->
     <div class="feature-box mb-4">
         <h2 class="text-center">Proyección del Proyecto</h2>
-        <p>El proyecto tiene el potencial de expandirse a otras áreas industriales, incorporando nuevos sensores y algoritmos de machine learning, para mejorar la predicción de fallos en diferentes tipos de maquinaria.</p>
-        <!-- Apartado para redirigir a recursos adicionales -->
+        <p>Este proyecto puede expandirse a otras industrias, integrando más tipos de sensores (como sensores de temperatura o presión) y aplicando redes neuronales avanzadas para mejorar la precisión de las predicciones. Con un enfoque continuo en la investigación y el desarrollo, se espera que esta tecnología revolucione la forma en que se gestiona el mantenimiento de maquinaria en diversas áreas industriales.</p>
         <div class="text-center mt-4">
             <h3>Si estás interesado en aprender más sobre el Mantenimiento Predictivo, visita este recurso:</h3>
             <a href="https://a-maq.com/introduccion-al-mantenimiento-predictivo-pdm-cbm/" target="_blank" class="btn btn-secondary">Investigar más</a>
