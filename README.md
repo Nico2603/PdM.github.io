@@ -6,7 +6,6 @@ Este proyecto web tiene como objetivo ofrecer una visión integral del Mantenimi
 ## **Características**
 - **Página Principal**: Explicación del PdM, los sensores utilizados, y los algoritmos de Machine Learning.
 - **Créditos**: Información sobre los creadores del proyecto.
-- **Donaciones**: Opción para apoyar el proyecto mediante un código QR de Nequi.
 
 ## **Tecnologías Utilizadas**
 - **HTML5**: Para la estructura y el contenido del sitio.
